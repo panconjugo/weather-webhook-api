@@ -88,6 +88,8 @@ def makeWebhookResult(data):
         speech = "Hoy en " + location.get('city') + " esta mayormente nublado, la temperatura es de " + condition.get('temp') + " grados"
     elif condition.get('text') == 'Partly Cloudy':
         speech = "Hoy en " + location.get('city') + " esta parcialmente nublado, la temperatura es de " + condition.get('temp') + " grados"
+    elif condition.get('text') == 'Clear':
+        speech = "Hoy en " + location.get('city') + " el cielo esta despejado, la temperatura es de " + condition.get('temp') + " grados"
     else:
         speech = speech = "Hoy en " + location.get('city') + " " + condition.get('text') + " , la temperatura es de " + condition.get('temp') + " grados"
 
