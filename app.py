@@ -85,7 +85,7 @@ def makeWebhookResult(data):
     # print(json.dumps(item, indent=4))
 
     if condition.get('text') == 'Mostly Cloudy':
-        speech = "Hoy en " + location.get('city') + ": Esta mayormente nublado, la temperatura es de " + condition.get('temp') + " grados"
+        speech = "Hoy en " + location.get('city') + " esta mayormente nublado, la temperatura es de " + condition.get('temp') + " grados"
     else:
         speech = "Andate a la chucha"
 
